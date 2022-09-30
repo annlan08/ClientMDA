@@ -36,5 +36,10 @@ namespace ClientMDA.Controllers
         {
             return View();
         }
+
+        public IActionResult PaymentWeb3()
+        {
+            return View();
+        }
     }
 }
