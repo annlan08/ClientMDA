@@ -41,5 +41,10 @@ namespace ClientMDA.Controllers
         {
             return View();
         }
+
+        public IActionResult Cube()
+        {
+            return View();
+        }
     }
 }

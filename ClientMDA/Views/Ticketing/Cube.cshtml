@@ -1,0 +1,91 @@
+﻿@{
+
+}
+
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: -150px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+            }
+    </style>
+
+<section>
+    <div class="swiper mySwiper swiper-cube swiper-3d swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress">
+        <div class="swiper-wrapper" id="swiper-wrapper-2534bcd138415866" aria-live="polite" style="cursor: grab; transform-origin: 50% 50% -150px; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(-180deg); --swiper-cube-translate-z:0px; transition-duration: 0ms;">
+            <div class="swiper-slide" role="group" aria-label="1 / 4" style="width: 300px; transform: rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                <img src="~/images/Ticketing/1.jpg">
+                <div class="swiper-slide-shadow-left" style="opacity: 0;"></div><div class="swiper-slide-shadow-right" style="opacity: 1;"></div>
+            </div>
+            <div class="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 4" style="width: 300px; transform: rotateX(0deg) rotateY(90deg) translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                <img src="~/images/Ticketing/2.jpg">
+                <div class="swiper-slide-shadow-left" style="opacity: 0;"></div><div class="swiper-slide-shadow-right" style="opacity: 1;"></div>
+            </div>
+            <div class="swiper-slide swiper-slide-visible swiper-slide-active" role="group" aria-label="3 / 4" style="width: 300px; transform: rotateX(0deg) rotateY(180deg) translate3d(300px, 0px, 300px); transition-duration: 0ms;">
+                <img src="~/images/Ticketing/3.jpg">
+                <div class="swiper-slide-shadow-left" style="opacity: 0;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div>
+            </div>
+            <div class="swiper-slide swiper-slide-next" role="group" aria-label="4 / 4" style="width: 300px; transform: rotateX(0deg) rotateY(270deg) translate3d(-300px, 0px, 900px); transition-duration: 0ms;">
+                <img src="~/images/Ticketing/4.jpg">
+                <div class="swiper-slide-shadow-left" style="opacity: 1;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div>
+            </div>
+            <div class="swiper-cube-shadow" style="height: 300px; transform: translate3d(0px, 170px, -150px) rotateX(90deg) rotateZ(0deg) scale(0.94);"></div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
